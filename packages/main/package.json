@@ -1,0 +1,22 @@
+{
+  "name": "@vite-electron-builder/main",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@vite-electron-builder/preload": "*",
+    "@vite-electron-builder/renderer": "*",
+    "electron-updater": "6.3.9"
+  },
+  "devDependencies": {
+    "vite": "5.4.10"
+  }
+}
